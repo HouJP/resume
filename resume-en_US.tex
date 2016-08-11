@@ -1,0 +1,102 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Jianpeng Hou}
+\centerline{Data Mining; Software Development}
+\vspace{2ex}
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+\contactInfo{houjp1992@gmail.com}{(+86) 152-0144-2067}{ \url{https://github.com/houjp/}}
+
+ 
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Institute of Computer Technology, Chinese Academy of Sciences}}{Sep. 2014 -- Jul. 2017}
+\textit{Master student} in Computer Software \& Theory, Rank: top 5\%
+\datedsubsection{\textbf{University of Science \& Technology Beijing}}{Sep. 2010 -- Jul. 2014}
+\textit{Bachelor student} in Computer Science \& Technology, Rank: 4/203
+
+\section{\faUsers\ Project Experience}
+\datedsubsection{\textbf{Big Data Analysis Platform}}{Oct. 2015 -- Mar. 2016}
+%\role{Summer Intern}{Manager: xxx}
+\begin{itemize}
+  \item  Developed distributed algorithms(CART/GBDT/GBRT/RF) on Spark.
+  \item Finished data mining components(Feature-Indexing/Feature-Merging/Feature-Normalization/Scoring).
+%  \item Optimized xxx 5\%
+\end{itemize}
+
+\datedsubsection{\textbf{China Telecom Big Data Application Contest (1st/1112)}}{Dec. 2015 -- Mar. 2016}
+%\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
+The goal of this contest is to predict views of users with ten sites succeeding, according to four hundred million user-behavior historical records(25.38G).
+%Brief introduction: xxx
+\begin{itemize}
+  \item Proposed and implemented a multi-target regression algorithm on Spark. Optimized F1-score 0.8\%.
+  \item Designed and developed a probability ranking model for user classification. Optimized F1-score  0.6\%.
+%  \item xxx
+\end{itemize}
+
+\datedsubsection{\textbf{SIGHAN-2015 Chinese Spelling Check Task}}{Mar. 2015 -- May. 2015}
+%\role{\LaTeX, Maintainer}{Individual Projects}
+The goal of this task is to detect and correct spelling errors on Chinese essays.
+\begin{itemize}
+  \item Handled this task with a unified framework which consisted of candidate generating, two stage candidates re-ranking and global decision making.
+  \item Finished candidate generating model and two stage candidates re-ranking model. Optimized F1-score 18\%.
+\end{itemize}
+
+\section{\faSitemap\ Practice Experience}
+
+\datedsubsection{\textbf{DiDi Research Institute}}{Jul. 2016 -- Aug. 2016}
+%\role{\LaTeX, Maintainer}{Individual Projects}
+%The goal of this task was to detect and correct spelling errors on Chinese essays.
+\begin{itemize}
+  \item Developed taxi dispatching system which used to balance the supply and demand between urban areas.
+  \item Reconstructed the log system of dispatching based on Kafka and MySQL.
+\end{itemize}
+
+\datedsubsection{\textbf{Baidu Online Network Technology(Beijing) Co.,Ltd}}{Dec. 2013 -- May. 2014}
+%\role{\LaTeX, Maintainer}{Individual Projects}
+%The goal of this task was to detect and correct spelling errors on Chinese essays.
+\begin{itemize}
+  \item Completed the multi-threaded development of LiveWDBBroom, improved the efficiency by two times.
+  \item Completed the development of the Problems-Tracing Platform which was put into service.
+  \item Passed the examination of Code Master(C++), certified as Good Coder.
+\end{itemize}
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+
+\section{\faTrophy\ Academic Competitions}
+\datedline{\textit{\nth{1} Place}~~Awarded in China Telecom Big Data Application Contest}{Mar. 2016}
+\datedline{\textit{\nth{1} Place}~~Awarded in SIGHAN-2015 Chinese Spelling Check Task}{Jun. 2015}
+\datedline{\textit{\nth{1} Place}~~Awarded in China College Students Computer Games Competition}{Nov. 2013}
+\datedline{\textit{\nth{1} Prize}~~Awarded in China College Students Computer Application Contest}{Nov. 2013}
+\datedline{\textit{\nth{1} Prize}~~Awarded in ”LanQiao Cup” Software Development Contest(Beijing Division)}{Apr. 2012}
+\datedline{\textit{Silver Medal~(\nth{17} / 200)}~~Awarded in ACM-ICPC Asia Beijing Regional Contest}{Nov. 2015}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Skilled in C++, Scala, Shell. Familiar with data structures and algorithms and had good programming style.
+  \item Experienced in development of distributed machine learning algorithms.
+  \item Strong theoretic knowledge on data mining and machine learning.
+\end{itemize}
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
