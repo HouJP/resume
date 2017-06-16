@@ -29,6 +29,7 @@
 ###	<a name="ppt">宣讲PPT</a>
 
 *	[HouJP-PPT](./talk-ppt/HouJP-interview-exp.key)
+* *	[邱志杰-PPT](./talk-ppt/邱志杰-计算人--找工作之路.pptx)
 
 ***
 
