@@ -2,7 +2,6 @@
 
 ##	<center>Job Application</center>
 ####	<center>Author: ICTer</center>
-####	<center>E-mail: houjp1992@gmail.com</center>
 
 ****
 
@@ -29,6 +28,7 @@
 ###	<a name="ppt">宣讲PPT</a>
 
 *	[HouJP-PPT](./talk-ppt/HouJP-interview-exp.key)
+* 	[周楠-PPT](./talk-ppt/周楠-求职分享.pptx)
 *	[邱志杰-PPT](./talk-ppt/邱志杰-计算人--找工作之路.pptx)
 
 ***
