@@ -35,7 +35,6 @@
 
 ###	<a name="materal">参考资料</a>
 
-*	[面试资料](./reference-material/面试资料.pdf)
 * 	[英语资料](./reference-material/英语资料.doc)
 
 
