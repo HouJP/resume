@@ -1,38 +1,39 @@
 ****
 
 ##	<center>中英文个人简历</center>
-####	<center>Author: HouJP</center>
-####	<center>E-mail: houjp1992@gmail.com</center>
+####	<center>作者: Jianpeng Hou (侯建鹏)</center>
 
 ****
 
 ###	目录
 *	[项目介绍](#intro)
-*	[版本更新](#version)
 *	[使用说明](#usage)
+*	[简历样例](#demo)
 * 	[参考链接](#link)
 
 ****
 
 ###	<a name="intro">项目介绍</a>
 
-HouJP的中英文简历，使用latex编译生成。
-
-****
-
-###	<a name="version">版本更新</a>
-
-*	无更新信息
+该项目为LaTeX编译生成的中英文个人简历。
 
 ****
 
 ###	<a name="usage">使用说明</a>
 
-*	无使用说明
+1. 安装[MacTeX](https://tug.org/mactex/mactex-download.html)。
+2. 用第一步中安装的软件`TeXShop`打开文件`resume.tex`。
+3. 点击`Typeset`编译文件，即可生成中英文简历的PDF文件。
 
+
+****
+
+### <a name="demo">简历样例</a>
+
+![样例](https://github.com/houjp/resume/imgs/demo.jpeg?raw=true)
 
 ****
 
 ###	<a name="link">参考链接</a>
 
-本简历参考自[billryan的模板](https://github.com/billryan/resume/)。
+- billryan的[简历模板](https://github.com/billryan/resume/)。

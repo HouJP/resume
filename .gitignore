@@ -39,7 +39,3 @@
 *.dvi
 *.ps
 
-############################################
-# do not upload secret infomation
-myresume.tex
-myresume.pdf
