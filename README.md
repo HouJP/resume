@@ -30,7 +30,7 @@
 
 ### <a name="demo">简历样例</a>
 
-![样例](https://github.com/houjp/resume/imgs/demo.jpeg?raw=true)
+![样例](https://github.com/houjp/resume/blob/master/imgs/demo.jpeg?raw=true)
 
 ****
 
