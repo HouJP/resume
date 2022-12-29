@@ -5,7 +5,6 @@
 
 ****
 
-###	目录
 *	[项目介绍](#intro)
 *	[使用说明](#usage)
 *	[简历样例](#demo)
@@ -36,4 +35,4 @@
 
 ###	<a name="link">参考链接</a>
 
-- billryan的[简历模板](https://github.com/billryan/resume/)。
+- billryan的[简历模板](https://github.com/billryan/resume/)
