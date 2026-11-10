@@ -1,0 +1,98 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{党林涛}
+\centerline{软件工程师}
+\vspace{2ex}
+\contactInfo{lingyun3730@163.com}{(+86) 15316768729}{上海}
+
+\section{个人简介与技能}
+拥有七年以上 eBay 支付与金融系统研发经验，业务涵盖换汇平台、支付记账、对账和财务报表；负责系统设计与开发、跨团队项目交付及生产运行维护。
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{后端}: Java、Spring Boot、多线程、SQL、Kafka、etcd。
+  \item \textbf{数据}: Scala、Spark、Hadoop HDFS、Hive、Parquet。
+  \item \textbf{语言}: 英语可作为日常工作语言。
+\end{itemize}
+
+\section{工作经历}
+\datedsubsection{\textbf{亿贝软件工程(上海)有限公司 | eBay}}{2019.04 - 2026.11}
+参与交易处理（Payment Graph）、支付路由、支付网关、支付记账及对账系统的开发。
+
+\datedsubsection{\textbf{MTS-1（Staff Engineer I）}}{2024.04 - 2026.11}
+\textit{跨团队技术领导与端到端项目交付}
+\begin{itemize}
+  \item 支付换汇平台搭建与汇率缓存优化
+  \begin{itemize}
+    \item[。] 参与建设统一汇率服务 FXCenter，集成多家汇率供应商，为公司各类 FX 业务提供汇率。
+    \item[。] 为接入方提供客户端集成库，简化业务系统对 FX 汇率服务的集成。
+    \item[。] 设计客户端与服务端两级汇率缓存：客户端缓存承接大部分查询，服务端缓存支持客户端刷新，避免每次汇率查询都访问数据库。
+    \item[。] 负责 FX Core 平台建设，集中支持各类换汇业务的财务相关 FX 计算。
+  \end{itemize}
+  \item 端到端项目技术负责人：Buyer FX 能力建设与 FX 收益优化
+  \begin{itemize}
+    \item[。] 领导 InHouse Buyer FX 项目端到端交付，覆盖需求分析、架构设计、开发、端到端测试及生产上线。
+    \item[。] 领导 FX Revenue Optimization 下的 Dynamic Pricing（动态定价）和 Payment Currency Expansion（支付币种扩展）两个项目从需求到上线的端到端交付，其中支付币种扩展将 Buyer FX 覆盖范围拓展至 42 个新的国家和地区。
+    \item[。] 协调跨国跨部门项目团队，与美国 PM 及不同业务领域工程团队对齐实施方案、管理跨团队依赖并协调资源，确保项目按时交付。
+  \end{itemize}
+  \item AI 辅助研发
+  \begin{itemize}
+    \item[。] 使用 Claude Code、GitHub Copilot、Skills 与 Model Context Protocol（MCP）集成构建研发工作流和 Agent。
+  \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{Software Engineer III}}{2021.07 - 2024.04}
+\textit{独立完成产品与技术方案的设计和落地}
+\begin{itemize}
+  \item Easy Finance Service
+  \begin{itemize}
+    \item[。] 面向 Finance/Accounting 团队独立设计并交付 Easy Finance Service，支持记账变更需求的提交与审批，满足财务合规要求。
+    \item[。] 与支付记账系统集成，将审批通过的变更转化为记账配置，实现配置流程自动化。
+  \end{itemize}
+  \item 支付记账数据管道
+  \begin{itemize}
+    \item[。] 设计并实现 ETL 管道，消费 Kafka 支付记账数据，以 Parquet 格式持久化到 Hadoop HDFS；设计 Hive 表结构与分区，支持 Hive/Spark SQL 查询。
+    \item[。] 实现批处理任务，定期合并 Parquet 文件并执行数据对账。
+  \end{itemize}
+  \item 基于 Spark 的财务报表生成
+  \begin{itemize}
+    \item[。] 独立设计并交付基于 Scala、Spark 和 Hive 的支付账户账龄报表方案，并进行报表生成性能调优。
+  \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{Software Engineer II}}{2019.04 - 2021.07}
+\textit{独立交付具体项目，承担生产运行与维护责任}
+\begin{itemize}
+  \item FAS 支付记账系统财务报表子系统设计与实现
+  \begin{itemize}
+    \item[。] 独立设计并实现 FAS 财务报表子系统，支持交易查询、分析及实时与批量报表；提前交付，并持续负责生产维护。
+    \item[。] 使用支持故障转移的 Java 多线程框架与 etcd 服务注册，分配集群资源执行报表生成任务。
+  \end{itemize}
+  \item 支付系统资金管理平台
+  \begin{itemize}
+    \item[。] 参与资金管理平台搭建，根据不同业务需求支持基于规则的资金调拨，保证原子性、实时性和幂等性。
+  \end{itemize}
+  \item FAS 支付记账系统迁移
+  \begin{itemize}
+    \item[。] 2019 年 8 月-2020 年 3 月参与 eBay FAS 支付记账系统迁移工作，开发程序对部分账户的余额从老系统到新系统迁移时的对账。
+  \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{摩根士丹利管理服务(上海)有限公司}}{2018.07 - 2018.09}
+软件工程师 -- 暑期实习
+
+\section{教育背景}
+\datedsubsection{\textbf{上海交通大学},电子与通信工程,\textit{硕士}}{2016.09 - 2019.03}
+\ \textbf{GPA: 3.68/4.0}, 获得 2018 年研究生国家奖学金，2016 年全国研究生数学建模竞赛二等奖。
+\datedsubsection{\textbf{同济大学},通信工程,\textit{本科}}{2012.09 - 2016.07}
+\ \textbf{GPA: 4.8/5.0}, 获得 2013，2014，2015 年校级学习奖学金，2016 年上海市优秀毕业生。
+
+\end{document}

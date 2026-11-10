@@ -1,0 +1,100 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Lintao Dang}
+\centerline{Software Engineer}
+\vspace{2ex}
+\contactInfo{lingyun3730@163.com}{(+86) 15316768729}{Shanghai}
+
+\section{\faCogs\ Profile}
+Backend engineer with over seven years of experience in payments and financial systems at eBay. Experience spans FX platforms, accounting, reconciliation, and financial reporting, with responsibility for system design, implementation, cross-team delivery, and production operation.
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{Backend}: Java, Spring Boot, multithreading, SQL, Kafka, etcd
+  \item \textbf{Data}: Scala, Spark, Hadoop HDFS, Hive, Parquet
+\end{itemize}
+
+\section{\faUsers\ Work Experience}
+\datedsubsection{\textbf{eBay} | Payments}{Apr. 2019 -- Nov. 2026}
+Development contributions across transaction processing (Payment Graph), payment routing, payment gateways, accounting, and reconciliation.
+
+\datedsubsection{\textbf{MTS-1 (Staff Engineer I)}}{Apr. 2024 -- Nov. 2026}
+\textit{Cross-team technical leadership and end-to-end project delivery}
+\begin{itemize}
+  \item FX Platform and Rate Caching
+  \begin{itemize}
+    \item[。] Contributed to FXCenter, a shared exchange-rate service integrating multiple vendors for FX applications across the company.
+    \item[。] Delivered a client integration library to simplify FX rate integration for consuming applications.
+    \item[。] Designed two-tier rate caching: client-side caches served most lookups, while server-side caching supported client refreshes without querying the database for each lookup.
+    \item[。] Built the FX Core platform to centralize financial FX calculations for FX businesses.
+  \end{itemize}
+  \item Engineering Lead -- Buyer FX and FX Revenue Optimization
+  \begin{itemize}
+    \item[。] Led end-to-end delivery of InHouse Buyer FX Enablement, covering requirements analysis, architecture design, development, E2E testing, and production launch.
+    \item[。] Led two FX Revenue Optimization projects from requirements to production: Dynamic Pricing and Payment Currency Expansion, with the latter extending Buyer FX coverage to 42 additional countries and regions.
+    \item[。] Coordinated cross-functional, international teams with US product managers and domain engineers to align implementation plans, manage dependencies, and deliver on schedule.
+  \end{itemize}
+  \item AI-Assisted Engineering
+  \begin{itemize}
+    \item[。] Built development workflows and agents using Claude Code, GitHub Copilot, Skills, and Model Context Protocol (MCP) integrations.
+  \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{Software Engineer III}}{Jul. 2021 -- Apr. 2024}
+\textit{Independent product and technical solution design and delivery}
+\begin{itemize}
+  \item Easy Finance Service
+  \begin{itemize}
+    \item[。] Independently designed and delivered a service for Finance and Accounting teams to submit and approve accounting changes while meeting compliance requirements.
+    \item[。] Integrated with the Financial Accounting System (FAS) to translate approved changes into accounting configurations, automating configuration work.
+  \end{itemize}
+  \item Payment Accounting Data Pipeline
+  \begin{itemize}
+    \item[。] Designed and implemented an ETL pipeline that consumed payment accounting data from Kafka and persisted it to Hadoop HDFS in Parquet format.
+    \item[。] Defined Hive table schemas and partitioning to support Hive/Spark SQL queries.
+    \item[。] Implemented batch jobs for Parquet file compaction and data reconciliation.
+  \end{itemize}
+  \item Spark-Based Financial Reporting
+  \begin{itemize}
+    \item[。] Designed and delivered payment account aging reports using Scala, Spark, and Hive; tuned report-generation performance.
+  \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{Software Engineer II}}{Apr. 2019 -- Jul. 2021}
+\textit{Independent project delivery and production ownership}
+\begin{itemize}
+  \item Financial Reporting Subsystem
+  \begin{itemize}
+    \item[。] Independently designed and implemented a FAS subsystem for transaction queries, analysis, and real-time and batch financial reports; delivered ahead of schedule and owned production maintenance.
+    \item[。] Used a failover-capable Java multithreading framework and etcd service registration to distribute report generation across cluster resources.
+  \end{itemize}
+  \item Fund Management Platform
+  \begin{itemize}
+    \item[。] Contributed to a rule-based fund allocation platform, ensuring atomicity, real-time processing, and idempotence.
+  \end{itemize}
+  \item Accounting System Migration
+  \begin{itemize}
+    \item[。] Contributed to the FAS migration from Aug. 2019 to Mar. 2020, implementing account balance reconciliation between the legacy and new systems.
+  \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{Morgan Stanley}}{Jul. 2018 -- Sep. 2018}
+Software Engineer - Summer Intern
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Shanghai Jiao Tong University}}{Sep. 2016 -- Mar. 2019}
+\textit{Electronic and Communication Engineering}, Master's degree
+\\ \textbf{GPA 3.68/4.0}; National Postgraduate Scholarship (2018); second prize, National Postgraduate Mathematical Contest in Modeling (2016).
+\datedsubsection{\textbf{Tongji University}}{Sep. 2012 -- Jul. 2016}
+\textit{Communication Engineering}, Bachelor's degree
+\\ \textbf{GPA 4.8/5.0}; Outstanding Graduate of Shanghai (2016).
+
+\end{document}
